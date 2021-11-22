@@ -12,12 +12,15 @@
     <div class="wrapper">
         <img id="popcat" src="./images/close.png" alt="">
       <button onclick="myFunction()">كسمين الحلواني</button>
- var inc = 0;
+ <script>
+    var cnt=0;
+    function CountFun(){
+     cnt=parseInt(cnt)+parseInt(1);
+     var divData=document.getElementById("showCount");
+     divData.innerHTML="عدد كسميات الحلواني: ("+cnt +")";//this part has been edited
 
- function myFunction() {
-    inc = inc + 1;
-    alert(inc);
- }
+    }
+  </script>
         <button id="btn">كسم الحلواني</button>
     </div>
 </body>
